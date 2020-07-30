@@ -20,6 +20,9 @@ public class Main
 		ListaDeTarefa.alteraStatus(t2);
 		ListaDeTarefa.alteraStatus(t4);
 		
+		//Remove a tarefa passada como parametro.
+		ListaDeTarefa.removeTarefa(t2);
+		
 		//Altera a descrição da minha tarefa.
 		ListaDeTarefa.alteraDescricao(t3,"Estudar POO");
 		ListaDeTarefa.alteraDescricao(t4,"Estudar muito mais");
@@ -27,10 +30,12 @@ public class Main
 		//Altera a data da tarefa.
 		ListaDeTarefa.alteraData(t4, "29/07");
 		
-		//Remove a tarefa passada como parametro.
-		ListaDeTarefa.removeTarefa(t2);
-		
+		//Imprime a lista de tarefa.
 		ListaDeTarefa.mostraListaDeTarefa();
+		
+		//O status da tarefa inicia como "Não_feita",esse metodo altera o status para "Feita".
+		ListaDeTarefa.alteraStatus(t1);
+		//Imprime a tarefa passada como parametro.
 		ListaDeTarefa.consultarTarefa(t1);
 		
 		
